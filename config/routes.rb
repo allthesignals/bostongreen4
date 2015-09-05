@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
   jsonapi_resources :facilities
   jsonapi_resources :parks
+  jsonapi_resources :facility_types
+  jsonapi_resources :activities
+  
   # jsonapi_resources :facilities
 
   # namespace :api do
