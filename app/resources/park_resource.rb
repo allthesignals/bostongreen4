@@ -1,5 +1,5 @@
 class ParkResource < JSONAPI::Resource
-	attribute :name
+	attributes :name, :descriptio, :address, :phone, :access, :featured, :area
 
 	filters :name, :activity_type
 
