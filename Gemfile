@@ -21,6 +21,7 @@ gem 'api-pagination'      # Paginates API in headers
 gem 'rack-cors', require: 'rack/cors' # CORS Headers
 gem 'httparty' # HTTP requests
 gem "squeel"
+gem "paperclip", "~> 4.3"
 
 # gem 'rgeo-geojson', require: 'rgeo/geo_json' # GeoJSON parsing
 # Use jquery as the JavaScript library

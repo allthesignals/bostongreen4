@@ -1,7 +1,8 @@
 class ParkResource < JSONAPI::Resource
-	attributes :name, :descriptio, :address, :phone, :access, :featured, :area
+	attributes :name, :description, :address, :phone, :access, :featured, :area
 
 	filters :name, :activity_type
+	has_many :park_images
 
 	def self.apply_filter(records, filter, value, options)
 	  	case filter

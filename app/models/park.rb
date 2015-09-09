@@ -2,6 +2,8 @@ class Park < ActiveRecord::Base
 	self.table_name = 'public.parks'
 	self.primary_key = 'id_0'
 
+	has_and_belongs_to_many :park_images
+
 	def self.filter_by_activity(activity_type_id)
 		facilities = Activity.find(activity_type_id).facilities.map(&:id).join(", ")
 		query = "SELECT parks.id_0 FROM parks, facilities WHERE facilities.id IN ( #{facilities} ) AND ST_Intersects(parks.geom, facilities.geom)"

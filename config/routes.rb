@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   jsonapi_resources :parks
   jsonapi_resources :facility_types
   jsonapi_resources :activities
+  jsonapi_resources :park_images
   
   # jsonapi_resources :facilities
 
